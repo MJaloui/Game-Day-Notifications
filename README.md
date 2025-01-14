@@ -6,11 +6,11 @@
 
 
 ## **Project Highlights**
-🏀 This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. 
+🏀 This project sends live NBA game score updates to subscriped users via text messages or emails.
 
 🏀 It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EventBridge** and **NBA APIs** to provide sports fans with up-to-date game information. 
 
-🏀 The project demonstrates cloud computing principles and efficient notification mechanisms.
+🏀 This project demonstrates how to utilize cloud computing to set up a quick and efficient way to send notifications.
 
 ---
 
