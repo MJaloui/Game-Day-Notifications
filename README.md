@@ -1,15 +1,26 @@
 # NBA Game Day Notifications / Sports Alerts System
+![image](https://github.com/user-attachments/assets/a9675056-55d3-4005-94fc-6d39dfb8e3b1)
 
-## **Project Overview**
-This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EvenBridge** and **NBA APIs** to provide sports fans with up-to-date game information. The project demonstrates cloud computing principles and efficient notification mechanisms.
+
+
+
+## **Project Highlights**
+🏀 This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. 
+
+🏀 It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EventBridge** and **NBA APIs** to provide sports fans with up-to-date game information. 
+
+🏀 The project demonstrates cloud computing principles and efficient notification mechanisms.
 
 ---
 
-## **Features**
-- Fetches live NBA game scores using an external API.
-- Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
-- Scheduled automation for regular updates using Amazon EventBridge.
-- Designed with security in mind, following the principle of least privilege for IAM roles.
+## **Capabilities**
+🔧 Fetches live NBA game scores using an external API.
+
+🔧 Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
+
+🔧 Scheduled automation for regular updates using Amazon EventBridge.
+
+🔧 Designed with security in mind, following the principle of least privilege for IAM roles.
 
 ## **Prerequisites**
 - Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
@@ -18,7 +29,7 @@ This project is an alert system that sends real-time NBA game day score notifica
 ---
 
 ## **Technical Architecture**
-![nba_API](https://github.com/user-attachments/assets/5e19635e-0685-4c07-9601-330f7d1231f9)
+<img src="https://github.com/user-attachments/assets/5e19635e-0685-4c07-9601-330f7d1231f9" width="50%" />
 
 
 ---
@@ -38,18 +49,6 @@ This project is an alert system that sends real-time NBA game day score notifica
 
 ---
 
-## **Project Structure**
-```bash
-game-day-notifications/
-├── src/
-│   ├── gd_notifications.py          # Main Lambda function code
-├── policies/
-│   ├── gb_sns_policy.json           # SNS publishing permissions
-│   ├── gd_eventbridge_policy.json   # EventBridge to Lambda permissions
-│   └── gd_lambda_policy.json        # Lambda execution role permissions
-├── .gitignore
-└── README.md                        # Project documentation
-```
 
 ## **Setup Instructions**
 
@@ -137,7 +136,7 @@ cd game-day-notifications
 4. Verify that SMS notifications are sent to the subscribed users.
 
 
-### **What We Learned**
+### **Key Takeaways**
 1. Designing a notification system with AWS SNS and Lambda.
 2. Securing AWS services with least privilege IAM policies.
 3. Automating workflows using EventBridge.
