@@ -137,13 +137,18 @@ cd game-day-notifications
 
 
 ### **Key Takeaways**
-1. Designing a notification system with AWS SNS and Lambda.
-2. Securing AWS services with least privilege IAM policies.
-3. Automating workflows using EventBridge.
-4. Integrating external APIs into cloud-based workflows.
+✔️ Designing a notification system with AWS SNS and Lambda.
+
+✔️ Securing AWS services with least privilege IAM policies.
+
+✔️ Automating workflows using EventBridge.
+
+✔️ Integrating external APIs into cloud-based workflows.
 
 
-### **Future Enhancements**
-1. Add NFL score alerts for extended functionality.
-2. Store user preferences (teams, game types) in DynamoDB for personalized alerts.
-3. Implement a web UI
+### **Opportunities for Growth**
+🌱 Add NFL score alerts for extended functionality.
+
+🌱 Store user preferences (teams, game types) in DynamoDB for personalized alerts.
+
+🌱 Implement a web UI
