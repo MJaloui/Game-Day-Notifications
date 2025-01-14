@@ -25,6 +25,10 @@ This project is an alert system that sends real-time NBA game day score notifica
 
 
 ## **Technologies**
+- **Linux**
+- **Virtual Box**
+- **Ubuntu**
+- **Visual Studio Code**
 - **Cloud Provider**: AWS
 - **Core Services**: SNS, Lambda, EventBridge
 - **External API**: NBA Game API (SportsData.io)
