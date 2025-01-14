@@ -54,7 +54,7 @@
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/ifeanyiro9/game-day-notifications.git
+git clone https://github.com/MJaloui/game-day-notifications
 cd game-day-notifications
 ```
 
