@@ -120,25 +120,62 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 ![image](https://github.com/user-attachments/assets/d8e72cf6-5b48-4b4f-b6ea-e3e2a0f9a1a8)
 ![image](https://github.com/user-attachments/assets/d1e2cc77-1743-4c8a-8a96-be231e27d01f)
-![image](https://github.com/user-attachments/assets/57e7e645-aea8-4d95-a2e7-74e6b8f8d77e)
+![image](https://github.com/user-attachments/assets/b93fbd70-8cd5-4cea-8487-361163243fd8)
 
- - Replace REGION and ACCOUNT_ID with your AWS region and account ID.
-Click Next: Tags (you can skip adding tags).
-Click Next: Review.
+
+18. Enter copied script in policy editor.
+
+  - Replace "Resource" contents in the script with ARN.
+    
+    - Before: "Resource": "arn:aws:sns:REGION:ACCOUNT_ID:gd_topic"
+    - After: "Resource": "Your_gd_topics_ARN_Number"
+      
+  - Under the  path Amazon SNS > Topics, you will find your ARN.
+    
+![image](https://github.com/user-attachments/assets/7bdc3b34-1d37-433c-9da1-0ccbb8e7f2df)
+![image](https://github.com/user-attachments/assets/ec8d0ef0-261f-4373-8046-8ba07e086293)
+
+
+
+
+19. Click Next: Tags (you can skip adding tags).
+    
+    - Click Next: Review.
 
 ![image](https://github.com/user-attachments/assets/5b9e7047-ed6d-45fa-b370-179aa7cd17d5)
 
 
-18.    
-Replace REGION and ACCOUNT_ID with your AWS region and account ID.
-Click Next: Tags (you can skip adding tags).
-Click Next: Review.
-Enter a name for the policy (e.g., gd_sns_policy).
-Review and click Create Policy.
-Create an IAM Role for Lambda
-Open the IAM service in the AWS Management Console.
-Click Roles → Create Role.
-Select AWS Service and choose Lambda.
+
+    
+20. Enter a name for the policy (e.g., gd_sns_policy).
+
+![image](https://github.com/user-attachments/assets/9893ef25-b96d-4c53-ad07-cda6beea3b34)
+
+
+
+
+21. Review and click Create Policy.
+
+![image](https://github.com/user-attachments/assets/48fe9d54-0859-487a-84ba-9d73dd574152)
+
+
+
+
+22. Next you will create an IAM Role for Lambda. To do this, Open the IAM service in the AWS Management Console.
+
+
+
+23. On the left Click "Roles", then click "Create role" on the top right.
+
+
+![image](https://github.com/user-attachments/assets/05c01bec-8701-4048-93ef-db3c3c6c16a5)
+
+
+Select "AWS Service" for your "Trusted enitity type", and choose "Lambda" for your Use case.
+
+![image](https://github.com/user-attachments/assets/bd0844a1-eeef-487c-a601-63f898e10331)
+
+
 Attach the following policies:
 SNS Publish Policy (gd_sns_policy) (created in the previous step).
 Lambda Basic Execution Role (AWSLambdaBasicExecutionRole) (an AWS managed policy).
