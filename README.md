@@ -60,7 +60,7 @@
 
 
 
-## **Setup Instructions**
+## **Setup Instructions**   ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/game-day-notifications/blob/main/VisualStepsHere.md) ❗⬅️
 
 ### **Clone the Repository**
 ```bash
