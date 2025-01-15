@@ -33,17 +33,18 @@ git clone https://github.com/MJaloui/game-day-notifications
 Scroll down to "Subcriptions" and click "Create subscriptions".
 
 ![image](https://github.com/user-attachments/assets/2917541a-c373-4998-b579-75484592518d)
+![image](https://github.com/user-attachments/assets/7392588c-5c84-4f59-b116-db65ff3c68f4)
 
-Add Subscriptions to the SNS Topic
-After creating the topic, click on the topic name from the list.
-Navigate to the Subscriptions tab and click Create subscription.
-Select a Protocol:
-For Email:
-Choose Email.
-Enter a valid email address.
-For SMS (phone number):
-Choose SMS.
-Enter a valid phone number in international format (e.g., +1234567890).
+After creating the topic, to add subscriptions, scroll down to "Subscriptions" tab and click Create subscription. (if you have other SNS Topics created, click the one you just created) 
+
+ - If you want a Email subscription, Select "Email" for Protocol. 
+ - For the "Endpoint", enter a valid email address.
+
+ - If you want an SMS (text messages), select "SMS" for protocol
+ - For the "Endpoint", enter a valid phone number in international format (e.g., +1234567890).
+
+![image](https://github.com/user-attachments/assets/bb6017c9-2cf5-4044-a44d-363ecf49fedb)
+
 Click Create Subscription.
 If you added an Email subscription:
 Check the inbox of the provided email address.
@@ -95,3 +96,28 @@ Open the Lambda function in the AWS Management Console.
 Create a test event to simulate execution.
 Run the function and check CloudWatch Logs for errors.
 Verify that SMS notifications are sent to the subscribed users.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
