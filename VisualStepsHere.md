@@ -30,12 +30,13 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 ![image](https://github.com/user-attachments/assets/48f597c7-3956-47bc-b41c-706902daf7f9)
 
-Scroll down to "Subcriptions" and click "Create subscriptions".
+8. Scroll down to "Subcriptions" and click "Create subscriptions".
 
 ![image](https://github.com/user-attachments/assets/2917541a-c373-4998-b579-75484592518d)
 ![image](https://github.com/user-attachments/assets/7392588c-5c84-4f59-b116-db65ff3c68f4)
 
-After creating the topic, to add subscriptions, scroll down to "Subscriptions" tab and click Create subscription. (if you have other SNS Topics created, click the one you just created) 
+9. After creating the topic, to add subscriptions, scroll down to "Subscriptions" tab and click Create subscription. (if you have other SNS 
+   Topics created, click the one you just created) 
 
  - If you want a Email subscription, Select "Email" for Protocol. 
  - For the "Endpoint", enter a valid email address.
@@ -45,13 +46,30 @@ After creating the topic, to add subscriptions, scroll down to "Subscriptions" t
 
 ![image](https://github.com/user-attachments/assets/bb6017c9-2cf5-4044-a44d-363ecf49fedb)
 
-Click Create Subscription.
-If you added an Email subscription:
-Check the inbox of the provided email address.
-Confirm the subscription by clicking the confirmation link in the email.
-For SMS, the subscription will be immediately active after creation.
-Create the SNS Publish Policy
-Open the IAM service in the AWS Management Console.
+10. Scroll down and click "Create Subscription" on the bottom right.
+
+![image](https://github.com/user-attachments/assets/de198a32-70b4-4290-82f1-55fa060c96fd)
+
+11. If you added an Email subscription:
+    
+ - Check the inbox of the provided email address.
+   
+ - Confirm the subscription by clicking the confirmation link in the email.
+
+![image](https://github.com/user-attachments/assets/5f6fc2a1-674b-4719-aa06-8530e69c8a0e)
+![image](https://github.com/user-attachments/assets/e9e1f40f-1926-443f-94be-015f8e4589fe)
+![image](https://github.com/user-attachments/assets/81ed5d91-281b-4b73-86e6-2796d3d7799c)
+
+12. For SMS (text messages), the subscription will be immediately active after creation.
+
+13. On the AWS page you have open, click "gd_topic" on the top path to validate your confirmed subcription. 
+
+![image](https://github.com/user-attachments/assets/a243923e-6fb5-4d54-ba30-a7edbe1af365)
+![image](https://github.com/user-attachments/assets/b3c4fc56-49e6-4770-b220-73b57e182eb5)
+
+13. Next you will create the SNS Publish Policy. Open the IAM service in the AWS Management Console.
+
+
 Navigate to Policies → Create Policy.
 Click JSON and paste the JSON policy from gd_sns_policy.json file
 Replace REGION and ACCOUNT_ID with your AWS region and account ID.
