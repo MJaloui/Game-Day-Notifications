@@ -12,7 +12,7 @@
 
 🏀 This project demonstrates how to utilize cloud computing to set up a quick and efficient way to send notifications.
 
----
+
 
 ## **Capabilities**
 🔧 Fetches live NBA game scores using an external API.
@@ -23,17 +23,7 @@
 
 🔧 Designed with security in mind, following the principle of least privilege for IAM roles.
 
-## **Prerequisites**
-- Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
-- Personal AWS account with basic understanding of AWS and Python
 
----
-
-## **Technical Architecture**
-<img src="https://github.com/user-attachments/assets/5e19635e-0685-4c07-9601-330f7d1231f9" width="50%" />
-
-
----
 
 
 ## **Technologies**
@@ -46,9 +36,28 @@
 - **External API**: NBA Game API (SportsData.io)
 - **Programming Language**: Python 3.x
 - **IAM Security**:
-  - Least privilege policies for Lambda, SNS, and EventBridge.
+- **Least privilege policies**: Lambda, SNS, and EventBridge
+
+
+
 
 ---
+
+## **Technical Architecture**
+<img src="https://github.com/user-attachments/assets/5e19635e-0685-4c07-9601-330f7d1231f9" width="50%" />
+
+
+
+
+---
+
+
+
+## **Prerequisites**
+- Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
+- Personal AWS account with basic understanding of AWS and Python
+
+
 
 
 ## **Setup Instructions**
@@ -59,27 +68,27 @@ git clone https://github.com/MJaloui/game-day-notifications
 cd game-day-notifications
 ```
 
-1. Create an SNS Topic**
+1. Create an SNS Topic.
 
 
-2. Add Subscriptions to the SNS Topic**
+2. Add Subscriptions to the SNS Topic.
 
 
-### **Create the SNS Publish Policy**
+3. Create the SNS Publish Policy.
 
 
-### **Create an IAM Role for Lambda**
+4. Create an IAM Role for Lambda.
 
 
-### **Deploy the Lambda Function**
-
-
-
-### **Set Up Automation with Eventbridge**
+5. Deploy the Lambda Function.
 
 
 
-### **Test the System**
+6. Set Up Automation with Eventbridge.
+
+
+
+7. Test the System.
 
 
 ---
