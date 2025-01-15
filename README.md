@@ -52,43 +52,38 @@
 ---
 
 
+## **Setup Instructions**   ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/game-day-notifications/blob/main/VisualStepsHere.md) ❗⬅️
 
-## **Prerequisites**
+### **Steps:** 
+
+**Prerequisites**
 - Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
 - Personal AWS account with basic understanding of AWS and Python
 
+1. Clone my Repository
+
+
+2. Create an SNS Topic.
+
+
+3. Add Subscriptions to the SNS Topic.
+
+
+4. Create the SNS Publish Policy.
+
+
+5. Create an IAM Role for Lambda.
+
+
+6. Deploy the Lambda Function.
 
 
 
-## **Setup Instructions**   ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/game-day-notifications/blob/main/VisualStepsHere.md) ❗⬅️
-
-### **Clone the Repository**
-```bash
-git clone https://github.com/MJaloui/game-day-notifications
-cd game-day-notifications
-```
-
-1. Create an SNS Topic.
-
-
-2. Add Subscriptions to the SNS Topic.
-
-
-3. Create the SNS Publish Policy.
-
-
-4. Create an IAM Role for Lambda.
-
-
-5. Deploy the Lambda Function.
+7. Set Up Automation with Eventbridge.
 
 
 
-6. Set Up Automation with Eventbridge.
-
-
-
-7. Test the System.
+8. Test the System.
 
 
 ---
