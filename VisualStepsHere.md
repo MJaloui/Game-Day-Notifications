@@ -3,6 +3,7 @@
 
 
 1. Make copy of my repository.
+
 Enter cmd:
 ```bash
 git clone https://github.com/MJaloui/game-day-notifications
