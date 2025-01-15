@@ -120,10 +120,15 @@ git clone https://github.com/MJaloui/game-day-notifications
 ![image](https://github.com/user-attachments/assets/d8e72cf6-5b48-4b4f-b6ea-e3e2a0f9a1a8)
 ![image](https://github.com/user-attachments/assets/d1e2cc77-1743-4c8a-8a96-be231e27d01f)
 ![image](https://github.com/user-attachments/assets/57e7e645-aea8-4d95-a2e7-74e6b8f8d77e)
+
+ - Replace REGION and ACCOUNT_ID with your AWS region and account ID.
+Click Next: Tags (you can skip adding tags).
+Click Next: Review.
+
 ![image](https://github.com/user-attachments/assets/5b9e7047-ed6d-45fa-b370-179aa7cd17d5)
 
 
-    
+18.    
 Replace REGION and ACCOUNT_ID with your AWS region and account ID.
 Click Next: Tags (you can skip adding tags).
 Click Next: Review.
