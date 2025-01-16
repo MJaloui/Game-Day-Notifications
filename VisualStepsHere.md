@@ -366,16 +366,76 @@ After you click "Save" click "Test" on top right. Wait about 3-6 seconds to vali
 
 
 You will recieve a notification in your email. Open the email to validate you recieved some game statuses.
+
 ![image](https://github.com/user-attachments/assets/861293fd-9197-45db-a83a-f397ac6ae655)
 ![image](https://github.com/user-attachments/assets/5a559a9d-188f-411b-bbd7-ff226cefa250)
 
 
-Select Event Source: Schedule.
-Set the cron schedule for when you want updates (e.g., hourly).
-Under Targets, select the Lambda function (gd_notifications) and save the rule.
-Test the System
-Open the Lambda function in the AWS Management Console.
-Create a test event to simulate execution.
+
+
+Go to "Amazon EventBridge" service to set the cron schedule for when you updates (e.g., hourly).
+
+![image](https://github.com/user-attachments/assets/a51142ac-c1c5-423f-b972-904cdf11f97f)
+![image](https://github.com/user-attachments/assets/0d554777-45c3-4cf1-b5ce-6711d5d7aec5)
+
+
+Scroll down and click "Create rule"
+
+![image](https://github.com/user-attachments/assets/62cff2a0-9009-4493-a36a-ba9a9f3ee40f)
+
+
+
+For the "Name" enter "gd_rule", for the "Rule type" select "Schedule", then click "Continue in EventBridge Scheduler".
+
+![image](https://github.com/user-attachments/assets/8eae4217-8c82-4d7d-81ec-ed3b25eb237a)
+
+
+
+Scroll down to "Schedule pattern", then select "Recurring schedule" and "Cron-based schedule".
+
+![image](https://github.com/user-attachments/assets/a653e3c6-3c9c-4c3c-9be1-56a32420ec76)
+
+
+Enter "Cron expression" for your schedule, you can get help to generate an Cron expression on chatGPT or any website you can research Cron 
+ expressions. After expressions are entered, select "Off" for "Flexable time window", then click next.
+
+![image](https://github.com/user-attachments/assets/33accc05-fb4a-40b0-a59f-6a2c88858fe2)
+![image](https://github.com/user-attachments/assets/deaada33-05fa-4bca-855e-70411edc4208)
+
+
+
+
+Scroll down to "Select target" and select "AWS Lambda".
+
+![image](https://github.com/user-attachments/assets/dd531d75-175f-4982-8b8d-0e80cae51e10)
+
+
+
+
+Scroll down to "Invoke" and  select the "Lambda function", "gd_notifications",
+![image](https://github.com/user-attachments/assets/34f6bb10-d385-42f8-b2f2-4103e8918154)
+
+Validate the  "Schedule state" is enabled, and under "Permissions" the "Execution role" is set to “Create new role for this schedule” (this should be default settings), then click next.
+
+![image](https://github.com/user-attachments/assets/5e1948ea-4705-4ea2-9263-081df5405e07)
+![image](https://github.com/user-attachments/assets/90c16b0f-0d64-4df9-9f93-8b1c0af05781)
+![image](https://github.com/user-attachments/assets/286b42e0-569b-48a3-8045-4f3c27dbca55)
+
+
+
+Scroll down and click "create schedule" on the bottom right.
+
+![image](https://github.com/user-attachments/assets/efe0910b-1245-426c-8d9a-ff93298ed737)
+![image](https://github.com/user-attachments/assets/72667fce-cc73-4bc7-bf1d-d405f2e2f227)
+
+
+
+Scroll down to "gd_rule" and validate the "Status" is "Enabled. 
+
+![image](https://github.com/user-attachments/assets/029e1f90-5cb6-44d0-a56a-9ff878e86aa4)
+
+
+
 Run the function and check CloudWatch Logs for errors.
 Verify that SMS notifications are sent to the subscribed users.
 
