@@ -176,7 +176,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 ![image](https://github.com/user-attachments/assets/bd0844a1-eeef-487c-a601-63f898e10331)
 
 
-Select the following policies:
+25. Select the following policies:
 
   - "gd_sns_policy", which is the SNS Publish Policy created in the previous step.
 
@@ -188,12 +188,12 @@ Select the following policies:
 ![image](https://github.com/user-attachments/assets/249ca4be-4a1d-4b79-ab5b-c745b2c4d09e)
 
 
-Click Next: Tags (you can skip adding tags).
+26. Click Next: Tags (you can skip adding tags).
 Click Next: Review.
 
 ![image](https://github.com/user-attachments/assets/6d63a384-f972-4cc7-b176-1972e926dda4)
 
-Enter a name for the role (e.g., gd_lambda_role), add a description if you wish, review everything, and click "Create Role".
+27. Enter a name for the role (e.g., gd_lambda_role), add a description if you wish, review everything, and click "Create Role".
 
 ![image](https://github.com/user-attachments/assets/23b2ea6d-aac8-45ab-8ece-583e0de21710)
 ![image](https://github.com/user-attachments/assets/9be51ee1-3648-4979-8231-440d9de041f7)
@@ -202,15 +202,50 @@ Enter a name for the role (e.g., gd_lambda_role), add a description if you wish,
 
 
 Copy and save the ARN of the role for use in the Lambda function.
-Next you will Deploy the Lambda Function
-Open the AWS Management Console and navigate to the Lambda service.
-Click Create Function.
-Select Author from Scratch.
-Enter a function name (e.g., gd_notifications).
-Choose Python 3.x as the runtime.
-Assign the IAM role created earlier (gd_role) to the function.
-Under the Function Code section:
-Copy the content of the src/gd_notifications.py file from the repository.
+
+
+
+28. Next you will Deploy the Lambda Function, open the AWS Management Console and navigate to the Lambda service.
+
+![image](https://github.com/user-attachments/assets/fadd4a85-dc09-454c-98b1-d66dbd677719)
+
+
+
+29. Click Create Function.
+
+![image](https://github.com/user-attachments/assets/1e8a7a62-37d6-47d8-a630-f982cf884394)
+
+30. Select the "Author from scratch", enter a "function name" (e.g., gd_notifications), choose Python 3.x as the runtime, and "Architecture" 
+    left at default setting "x86_64".
+
+![image](https://github.com/user-attachments/assets/3a38f566-726e-4c55-bc49-e284945bb580)
+
+
+31. Under "Execution role" select "Use an existing role". Assign the IAM role created earlier (gd_lambda_role) to the function "Existing 
+    role". Then click "Create function".
+
+![image](https://github.com/user-attachments/assets/e14fbeca-61f2-4921-956b-30a4afef2b1b)
+![image](https://github.com/user-attachments/assets/5e551674-d5f4-412f-9286-3d12c4648efe)
+
+![image](https://github.com/user-attachments/assets/e31b9636-f76a-4217-b3ac-25993d152109)
+
+
+
+
+32. Scroll down to the function "Code" tab.
+
+![image](https://github.com/user-attachments/assets/ea543a83-2706-43d1-9787-52ba8dfe24b4)
+
+
+copy the contents of the src/gd_notifications.py file from the repository and paste it 
+    in the code funtion.
+    
+![image](https://github.com/user-attachments/assets/db81d713-60f4-4463-94f9-2297afabe513)
+![image](https://github.com/user-attachments/assets/bfa42358-dc41-414c-a9e6-3fe53337d9af)
+
+
+
+
 Paste it into the inline code editor.
 Under the Environment Variables section, add the following:
 NBA_API_KEY: your NBA API key.
