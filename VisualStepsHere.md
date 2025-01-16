@@ -1,28 +1,80 @@
 ![image](https://github.com/user-attachments/assets/ad398757-06f2-40ec-bb79-084f1c035850)
 
 
+1. Go to Sportsdata.io and create a free account
 
-1. Make copy of my repository.
+
+
+2. Click "API Free Trail"
+![image](https://github.com/user-attachments/assets/4bf332c5-f303-4ad5-9576-97616c8e4cb3)
+
+
+
+3. Click "SportsDataIO API Free Trial"
+![image](https://github.com/user-attachments/assets/fe09198d-75db-4638-a77d-78d39a49fcd7)
+
+
+
+4. Fill out all of the information asked for the free trial and click "Submit".
+![image](https://github.com/user-attachments/assets/92916034-cb25-499a-aa62-8f39a77be52b)
+![image](https://github.com/user-attachments/assets/758853c4-0dcd-4699-970e-3fa5e038edeb)
+
+
+
+5. You will get an email and at the bottom it says "Launch Developer Portal"
+![image](https://github.com/user-attachments/assets/a19fcea7-e8dd-4349-af9e-f2922616cb11)
+![image](https://github.com/user-attachments/assets/292a8de8-fbca-4034-b8bb-d0331911f2fb)
+
+
+
+
+6. By default it takes you to the NFL, on the left click on NBA
+![image](https://github.com/user-attachments/assets/0cba64fe-e369-4f44-ab87-26a149d726eb)
+![image](https://github.com/user-attachments/assets/f24a2a60-bc9d-44ae-905e-1e6c772fd313)
+
+
+
+7. Scroll down until you see "Standings", your API Key is under "query String Parameters".
+
+![image](https://github.com/user-attachments/assets/ed0d2d02-a540-4994-aacf-74eb3a611ef4)
+
+![image](https://github.com/user-attachments/assets/72cdcd13-483a-4d79-b5bb-024a019f2312)
+
+
+
+
+8. Make copy of my repository.
 
 Enter cmd:
 ```bash
 git clone https://github.com/MJaloui/game-day-notifications
 ```
 
-2. Create a directory called "game-day-notifications"
 
 
-3. To create an SNS Topic, open the AWS Management Console and navigate to the SNS service.
+9. Create a directory called "game-day-notifications"
+
+
+
+
+
+10. To create an SNS Topic, open the AWS Management Console and navigate to the SNS service.
 
    ![image](https://github.com/user-attachments/assets/5478cef6-35f2-441b-84fd-b69c2404fea9)
 
-4. Click Create Topic and select Standard as the topic type.
+
+
+
+11. Click Create Topic and select Standard as the topic type.
 
 ![image](https://github.com/user-attachments/assets/6123772d-0a76-4a45-a3d8-b68229b751ec)
 ![image](https://github.com/user-attachments/assets/ec957b4b-73ee-4b27-aa7f-a01019e3fa1a)
 
 
-5.Select Standard and Name the topic (e.g., gd_topic) , then click "Create Topic
+
+
+
+12.Select Standard and Name the topic (e.g., gd_topic) , then click "Create Topic
 
 ![image](https://github.com/user-attachments/assets/f1c87d31-75ea-4f40-a13b-0f027887124a)
 ![image](https://github.com/user-attachments/assets/4730837c-96cb-4760-adf4-5461571d088f)
@@ -31,7 +83,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-7. Take note of the ARN, you will need to use it later.
+13. Take note of the ARN, you will need to use it later.
 
 ![image](https://github.com/user-attachments/assets/48f597c7-3956-47bc-b41c-706902daf7f9)
 
@@ -39,7 +91,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-8. Scroll down to "Subcriptions" and click "Create subscriptions".
+14. Scroll down to "Subcriptions" and click "Create subscriptions".
 
 ![image](https://github.com/user-attachments/assets/2917541a-c373-4998-b579-75484592518d)
 ![image](https://github.com/user-attachments/assets/7392588c-5c84-4f59-b116-db65ff3c68f4)
@@ -47,7 +99,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-9. After creating the topic, to add subscriptions, scroll down to "Subscriptions" tab and click Create subscription. (if you have other SNS 
+15. After creating the topic, to add subscriptions, scroll down to "Subscriptions" tab and click Create subscription. (if you have other SNS 
    Topics created, click the one you just created) 
 
  - If you want a Email subscription, Select "Email" for Protocol. 
@@ -61,7 +113,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-10. Scroll down and click "Create Subscription" on the bottom right.
+16. Scroll down and click "Create Subscription" on the bottom right.
 
 ![image](https://github.com/user-attachments/assets/de198a32-70b4-4290-82f1-55fa060c96fd)
 
@@ -69,7 +121,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-11. If you added an Email subscription:
+17. If you added an Email subscription:
     
  - Check the inbox of the provided email address.
    
@@ -82,12 +134,12 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-12. For SMS (text messages), the subscription will be immediately active after creation.
+18. For SMS (text messages), the subscription will be immediately active after creation.
 
 
 
 
-13. On the AWS page you have open, click "gd_topic" on the top path to validate your confirmed subcription. 
+19. On the AWS page you have open, click "gd_topic" on the top path to validate your confirmed subcription. 
 
 ![image](https://github.com/user-attachments/assets/a243923e-6fb5-4d54-ba30-a7edbe1af365)
 ![image](https://github.com/user-attachments/assets/b90d8a6c-7118-405a-aa5c-ae418652ce85)
@@ -95,7 +147,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-14. Next you will create the SNS Publish Policy. Open the IAM service in the AWS Management Console.
+20. Next you will create the SNS Publish Policy. Open the IAM service in the AWS Management Console.
     
 ![image](https://github.com/user-attachments/assets/19aa4ce6-316b-4c60-828f-fb9a2724e02e)
 ![image](https://github.com/user-attachments/assets/46dd8490-6681-4382-ae2a-b8da96e8fff5)
@@ -103,27 +155,27 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-15. On the left panel, navigate to Policies, then click "Create Policy" on the top right.
+21. On the left panel, navigate to Policies, then click "Create Policy" on the top right.
 
 ![image](https://github.com/user-attachments/assets/dc6e92b5-58cf-4464-bb9c-5666043050e8)
 ![image](https://github.com/user-attachments/assets/1e599c91-e66d-433b-956c-9ec2e97f56f5)
 
 
 
-16. Select the SNS service uner "Select a serivice".
+22. Select the SNS service uner "Select a serivice".
 
 ![image](https://github.com/user-attachments/assets/ec00fce6-2d16-4a2e-9379-7b6d3462946f)
 
 
 
-17. Click "JSON" tab and paste the JSON policy from gd_sns_policy.json file (the file is located in my github or your account if it was cloned). After tasks are completed click "Next".
+23. Click "JSON" tab and paste the JSON policy from gd_sns_policy.json file (the file is located in my github or your account if it was cloned). After tasks are completed click "Next".
 
 ![image](https://github.com/user-attachments/assets/d8e72cf6-5b48-4b4f-b6ea-e3e2a0f9a1a8)
 ![image](https://github.com/user-attachments/assets/d1e2cc77-1743-4c8a-8a96-be231e27d01f)
 ![image](https://github.com/user-attachments/assets/b93fbd70-8cd5-4cea-8487-361163243fd8)
 
 
-18. Enter copied script in policy editor.
+24. Enter copied script in policy editor.
 
   - Replace "Resource" contents in the script with ARN.
     
@@ -138,7 +190,7 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
 
-19. Click Next: Tags (you can skip adding tags).
+25. Click Next: Tags (you can skip adding tags).
     
     - Click Next: Review.
 
@@ -147,36 +199,36 @@ git clone https://github.com/MJaloui/game-day-notifications
 
 
     
-20. Enter a name for the policy (e.g., gd_sns_policy).
+26. Enter a name for the policy (e.g., gd_sns_policy).
 
 ![image](https://github.com/user-attachments/assets/9893ef25-b96d-4c53-ad07-cda6beea3b34)
 
 
 
 
-21. Review and click Create Policy.
+27. Review and click Create Policy.
 
 ![image](https://github.com/user-attachments/assets/48fe9d54-0859-487a-84ba-9d73dd574152)
 
 
 
 
-22. Next you will create an IAM Role for Lambda. To do this, Open the IAM service in the AWS Management Console.
+28. Next you will create an IAM Role for Lambda. To do this, Open the IAM service in the AWS Management Console.
 
 
 
-23. On the left Click "Roles", then click "Create role" on the top right.
+29. On the left Click "Roles", then click "Create role" on the top right.
 
 
 ![image](https://github.com/user-attachments/assets/05c01bec-8701-4048-93ef-db3c3c6c16a5)
 
 
-24. Select "AWS Service" for your "Trusted enitity type", and choose "Lambda" for your Use case.
+30. Select "AWS Service" for your "Trusted enitity type", and choose "Lambda" for your Use case.
 
 ![image](https://github.com/user-attachments/assets/bd0844a1-eeef-487c-a601-63f898e10331)
 
 
-25. Select the following policies:
+31. Select the following policies:
 
   - "gd_sns_policy", which is the SNS Publish Policy created in the previous step.
 
@@ -188,12 +240,12 @@ git clone https://github.com/MJaloui/game-day-notifications
 ![image](https://github.com/user-attachments/assets/249ca4be-4a1d-4b79-ab5b-c745b2c4d09e)
 
 
-26. Click Next: Tags (you can skip adding tags).
+32. Click Next: Tags (you can skip adding tags).
 Click Next: Review.
 
 ![image](https://github.com/user-attachments/assets/6d63a384-f972-4cc7-b176-1972e926dda4)
 
-27. Enter a name for the role (e.g., gd_lambda_role), add a description if you wish, review everything, and click "Create Role".
+33. Enter a name for the role (e.g., gd_lambda_role), add a description if you wish, review everything, and click "Create Role".
 
 ![image](https://github.com/user-attachments/assets/23b2ea6d-aac8-45ab-8ece-583e0de21710)
 ![image](https://github.com/user-attachments/assets/9be51ee1-3648-4979-8231-440d9de041f7)
@@ -205,23 +257,23 @@ Copy and save the ARN of the role for use in the Lambda function.
 
 
 
-28. Next you will Deploy the Lambda Function, open the AWS Management Console and navigate to the Lambda service.
+34. Next you will Deploy the Lambda Function, open the AWS Management Console and navigate to the Lambda service.
 
 ![image](https://github.com/user-attachments/assets/fadd4a85-dc09-454c-98b1-d66dbd677719)
 
 
 
-29. Click Create Function.
+35. Click Create Function.
 
 ![image](https://github.com/user-attachments/assets/1e8a7a62-37d6-47d8-a630-f982cf884394)
 
-30. Select the "Author from scratch", enter a "function name" (e.g., gd_notifications), choose Python 3.x as the runtime, and "Architecture" 
+36. Select the "Author from scratch", enter a "function name" (e.g., gd_notifications), choose Python 3.x as the runtime, and "Architecture" 
     left at default setting "x86_64".
 
 ![image](https://github.com/user-attachments/assets/3a38f566-726e-4c55-bc49-e284945bb580)
 
 
-31. Under "Execution role" select "Use an existing role". Assign the IAM role created earlier (gd_lambda_role) to the function "Existing 
+37. Under "Execution role" select "Use an existing role". Assign the IAM role created earlier (gd_lambda_role) to the function "Existing 
     role". Then click "Create function".
 
 ![image](https://github.com/user-attachments/assets/e14fbeca-61f2-4921-956b-30a4afef2b1b)
@@ -232,18 +284,18 @@ Copy and save the ARN of the role for use in the Lambda function.
 
 
 
-32. Scroll down to the function "Code" tab.
+38. Scroll down to the function "Code" tab.
 
 ![image](https://github.com/user-attachments/assets/ea543a83-2706-43d1-9787-52ba8dfe24b4)
 
 
-33. copy the contents of the src/gd_notifications.py file from the repository and paste it 
+39. copy the contents of the src/gd_notifications.py file from the repository and paste it 
     in the code funtion. 
     
 ![image](https://github.com/user-attachments/assets/db81d713-60f4-4463-94f9-2297afabe513)
 ![image](https://github.com/user-attachments/assets/bfa42358-dc41-414c-a9e6-3fe53337d9af)
 
-34. Click deploy on the left panel.
+40. Click deploy on the left panel.
 
 ![image](https://github.com/user-attachments/assets/2f9695e0-9cde-4026-ba13-ceabe4a65031)
 
