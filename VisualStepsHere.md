@@ -299,9 +299,27 @@ Copy and save the ARN of the role for use in the Lambda function.
 
 ![image](https://github.com/user-attachments/assets/2f9695e0-9cde-4026-ba13-ceabe4a65031)
 
+41. If it was succesfull, you will see a success banner on the top.
 
-Under the Environment Variables section, add the following:
-NBA_API_KEY: your NBA API key.
+![image](https://github.com/user-attachments/assets/c57f02f4-4f6d-496a-b30b-a100a113d41f)
+
+Next, go to "Configuration" tab, then click "Environment Variables" on the left panel. 
+
+![image](https://github.com/user-attachments/assets/74870b44-55d5-42fa-bd67-440eacfc8736)
+
+Click "Add environment variable", then add the "Key" name (API Key) and "Value" (API Key).
+
+![image](https://github.com/user-attachments/assets/4d322e99-3c27-47cc-98ce-23b9237ca88c)
+![image](https://github.com/user-attachments/assets/fad314d8-7e1d-4884-b03f-fbcf63d0f1e8)
+
+
+Click "Add environment variable" to add a second variable. Add the "Key" name (SNS Topic) and "Value" (ARN of SNS topic created earlier).  After you enter both Variables click "Save".
+
+
+![image](https://github.com/user-attachments/assets/c20f692f-39ee-46d9-bfae-4b4020635eea)
+![image](https://github.com/user-attachments/assets/ace03121-09f7-48cf-9545-9238f294f985)
+
+
 SNS_TOPIC_ARN: the ARN of the SNS topic created earlier.
 Click Create Function.
 Set Up Automation with Eventbridge
