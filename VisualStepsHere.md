@@ -202,7 +202,7 @@ Enter a name for the role (e.g., gd_lambda_role), add a description if you wish,
 
 
 Copy and save the ARN of the role for use in the Lambda function.
-Deploy the Lambda Function
+Next you will Deploy the Lambda Function
 Open the AWS Management Console and navigate to the Lambda service.
 Click Create Function.
 Select Author from Scratch.
