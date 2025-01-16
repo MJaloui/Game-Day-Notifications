@@ -317,17 +317,17 @@ Copy and save the ARN of the role for use in the Lambda function.
 
 ![image](https://github.com/user-attachments/assets/48c14022-6052-41e2-89a5-da7f26179cdb)
 
-Next, go to "Configuration" tab, then click "Environment Variables" on the left panel. 
+43. Next, go to "Configuration" tab, then click "Environment Variables" on the left panel. 
 
 ![image](https://github.com/user-attachments/assets/74870b44-55d5-42fa-bd67-440eacfc8736)
 
-Click "Add environment variable", then add the "Key" name (API Key) and "Value" (API Key).
+44. Click "Add environment variable", then add the "Key" name (API Key) and "Value" (API Key).
 
 ![image](https://github.com/user-attachments/assets/4d322e99-3c27-47cc-98ce-23b9237ca88c)
 ![image](https://github.com/user-attachments/assets/fad314d8-7e1d-4884-b03f-fbcf63d0f1e8)
 
 
-Click "Add environment variable" to add a second variable. Add the "Key" name (SNS Topic) and "Value" (ARN of SNS topic created earlier).  After you enter both Variables click "Save" and "Create function"
+45. Click "Add environment variable" to add a second variable. Add the "Key" name (SNS Topic) and "Value" (ARN of SNS topic created earlier).  After you enter both Variables click "Save" and "Create function"
 
 
 ![image](https://github.com/user-attachments/assets/c20f692f-39ee-46d9-bfae-4b4020635eea)
@@ -335,37 +335,37 @@ Click "Add environment variable" to add a second variable. Add the "Key" name (S
 ![image](https://github.com/user-attachments/assets/721c59f8-ad5e-4eb8-94ab-85dba130cb14)
 ![image](https://github.com/user-attachments/assets/380e37c6-8eb9-45c3-9ae9-25782bf21cc7)
 
-You will now have to Set Up Automation with Eventbridge, navigate to the Eventbridge service in the AWS Management Console.
+46.You will now have to Set Up Automation with Eventbridge, navigate to the Eventbridge service in the AWS Management Console.
 
 ![image](https://github.com/user-attachments/assets/2d1d935f-aabd-4c8e-a14e-e7ea19fb7079)
 
-On the Left panel click to "Rules" , then click "Create Rule".
+47. On the Left panel click to "Rules" , then click "Create Rule".
 
 ![image](https://github.com/user-attachments/assets/948f6b29-1ae3-461f-b660-905deb5c2213)
 ![image](https://github.com/user-attachments/assets/211cd152-37b4-4e20-8ef4-96b5df6cd2ea)
 
-Test the system to validate it works, click the "Test" tab.
+48. Test the system to validate it works, click the "Test" tab.
 
 ![image](https://github.com/user-attachments/assets/fb58b3b2-cdd2-40cc-a07d-5ca30da863e0)
 
 
 
 
-For the "Event name", name it “test1”, and click save. Leave everything else at the default settings.
+49. For the "Event name", name it “test1”, and click save. Leave everything else at the default settings.
 
 ![image](https://github.com/user-attachments/assets/705eb746-ee1d-448b-9ae1-b9efdb8e6272)
 
 
 
 
-After you click "Save" click "Test" on top right. Wait about 3-6 seconds to validate test was successful.
+42. After you click "Save" click "Test" on top right. Wait about 3-6 seconds to validate test was successful.
 
 ![image](https://github.com/user-attachments/assets/bea16235-3f2d-413d-a7fb-ca2380bce94f)
 ![image](https://github.com/user-attachments/assets/2c24622b-b481-4004-a9cd-9acff6f520fa)
 
 
 
-You will recieve a notification in your email. Open the email to validate you recieved some game statuses.
+43. You will recieve a notification in your email. Open the email to validate you recieved some game statuses.
 
 ![image](https://github.com/user-attachments/assets/861293fd-9197-45db-a83a-f397ac6ae655)
 ![image](https://github.com/user-attachments/assets/5a559a9d-188f-411b-bbd7-ff226cefa250)
@@ -373,31 +373,31 @@ You will recieve a notification in your email. Open the email to validate you re
 
 
 
-Go to "Amazon EventBridge" service to set the cron schedule for when you updates (e.g., hourly).
+44. Go to "Amazon EventBridge" service to set the cron schedule for when you updates (e.g., hourly).
 
 ![image](https://github.com/user-attachments/assets/a51142ac-c1c5-423f-b972-904cdf11f97f)
 ![image](https://github.com/user-attachments/assets/0d554777-45c3-4cf1-b5ce-6711d5d7aec5)
 
 
-Scroll down and click "Create rule"
+45. Scroll down and click "Create rule"
 
 ![image](https://github.com/user-attachments/assets/62cff2a0-9009-4493-a36a-ba9a9f3ee40f)
 
 
 
-For the "Name" enter "gd_rule", for the "Rule type" select "Schedule", then click "Continue in EventBridge Scheduler".
+46. For the "Name" enter "gd_rule", for the "Rule type" select "Schedule", then click "Continue in EventBridge Scheduler".
 
 ![image](https://github.com/user-attachments/assets/8eae4217-8c82-4d7d-81ec-ed3b25eb237a)
 
 
 
-Scroll down to "Schedule pattern", then select "Recurring schedule" and "Cron-based schedule".
+47. Scroll down to "Schedule pattern", then select "Recurring schedule" and "Cron-based schedule".
 
 ![image](https://github.com/user-attachments/assets/a653e3c6-3c9c-4c3c-9be1-56a32420ec76)
 
 
-Enter "Cron expression" for your schedule, you can get help to generate an Cron expression on chatGPT or any website you can research Cron 
- expressions. After expressions are entered, select "Off" for "Flexable time window", then click next.
+48. Enter "Cron expression" for your schedule, you can get help to generate an Cron expression on chatGPT or any website you can research 
+    Cron expressions. After expressions are entered, select "Off" for "Flexable time window", then click next.
 
 ![image](https://github.com/user-attachments/assets/33accc05-fb4a-40b0-a59f-6a2c88858fe2)
 ![image](https://github.com/user-attachments/assets/deaada33-05fa-4bca-855e-70411edc4208)
@@ -405,17 +405,17 @@ Enter "Cron expression" for your schedule, you can get help to generate an Cron 
 
 
 
-Scroll down to "Select target" and select "AWS Lambda".
+49. Scroll down to "Select target" and select "AWS Lambda".
 
 ![image](https://github.com/user-attachments/assets/dd531d75-175f-4982-8b8d-0e80cae51e10)
 
 
 
 
-Scroll down to "Invoke" and  select the "Lambda function", "gd_notifications",
+50. Scroll down to "Invoke" and  select the "Lambda function", "gd_notifications",
 ![image](https://github.com/user-attachments/assets/34f6bb10-d385-42f8-b2f2-4103e8918154)
 
-Validate the  "Schedule state" is enabled, and under "Permissions" the "Execution role" is set to “Create new role for this schedule” (this should be default settings), then click next.
+51. Validate the  "Schedule state" is enabled, and under "Permissions" the "Execution role" is set to “Create new role for this schedule” (this should be default settings), then click next.
 
 ![image](https://github.com/user-attachments/assets/5e1948ea-4705-4ea2-9263-081df5405e07)
 ![image](https://github.com/user-attachments/assets/90c16b0f-0d64-4df9-9f93-8b1c0af05781)
@@ -423,17 +423,16 @@ Validate the  "Schedule state" is enabled, and under "Permissions" the "Executio
 
 
 
-Scroll down and click "create schedule" on the bottom right.
+52. Scroll down and click "create schedule" on the bottom right.
 
 ![image](https://github.com/user-attachments/assets/efe0910b-1245-426c-8d9a-ff93298ed737)
 ![image](https://github.com/user-attachments/assets/72667fce-cc73-4bc7-bf1d-d405f2e2f227)
 
 
 
-Scroll down to "gd_rule" and validate the "Status" is "Enabled. 
+53. Scroll down to "gd_rule" and validate the "Status" is "Enabled. 
 
 ![image](https://github.com/user-attachments/assets/029e1f90-5cb6-44d0-a56a-9ff878e86aa4)
-
 
 
 Run the function and check CloudWatch Logs for errors.
