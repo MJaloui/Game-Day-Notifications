@@ -171,18 +171,36 @@ git clone https://github.com/MJaloui/game-day-notifications
 ![image](https://github.com/user-attachments/assets/05c01bec-8701-4048-93ef-db3c3c6c16a5)
 
 
-Select "AWS Service" for your "Trusted enitity type", and choose "Lambda" for your Use case.
+24. Select "AWS Service" for your "Trusted enitity type", and choose "Lambda" for your Use case.
 
 ![image](https://github.com/user-attachments/assets/bd0844a1-eeef-487c-a601-63f898e10331)
 
 
-Attach the following policies:
-SNS Publish Policy (gd_sns_policy) (created in the previous step).
-Lambda Basic Execution Role (AWSLambdaBasicExecutionRole) (an AWS managed policy).
+Select the following policies:
+
+  - "gd_sns_policy", which is the SNS Publish Policy created in the previous step.
+
+![image](https://github.com/user-attachments/assets/6f41f5ba-9241-44a1-8e8d-7ef871a27601)
+
+
+  - "AWSLambdaBasicExecutionRole", which Lambda Basic Execution Role, an AWS managed policy.
+
+![image](https://github.com/user-attachments/assets/249ca4be-4a1d-4b79-ab5b-c745b2c4d09e)
+
+
 Click Next: Tags (you can skip adding tags).
 Click Next: Review.
-Enter a name for the role (e.g., gd_role).
-Review and click Create Role.
+
+![image](https://github.com/user-attachments/assets/6d63a384-f972-4cc7-b176-1972e926dda4)
+
+Enter a name for the role (e.g., gd_lambda_role), add a description if you wish, review everything, and click "Create Role".
+
+![image](https://github.com/user-attachments/assets/23b2ea6d-aac8-45ab-8ece-583e0de21710)
+![image](https://github.com/user-attachments/assets/9be51ee1-3648-4979-8231-440d9de041f7)
+![image](https://github.com/user-attachments/assets/391f0989-80df-442e-98ec-01873d8d902e)
+
+
+
 Copy and save the ARN of the role for use in the Lambda function.
 Deploy the Lambda Function
 Open the AWS Management Console and navigate to the Lambda service.
