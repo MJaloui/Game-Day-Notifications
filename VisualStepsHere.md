@@ -358,9 +358,16 @@ For the "Event name", name it “test1”, and click save. Leave everything else
 
 
 
+After you click "Save" click "Test" on top right. Wait about 3-6 seconds to validate test was successful.
 
-click test on top right
+![image](https://github.com/user-attachments/assets/bea16235-3f2d-413d-a7fb-ca2380bce94f)
+![image](https://github.com/user-attachments/assets/2c24622b-b481-4004-a9cd-9acff6f520fa)
 
+
+
+You will recieve a notification in your email. Open the email to validate you recieved some game statuses.
+![image](https://github.com/user-attachments/assets/861293fd-9197-45db-a83a-f397ac6ae655)
+![image](https://github.com/user-attachments/assets/5a559a9d-188f-411b-bbd7-ff226cefa250)
 
 
 Select Event Source: Schedule.
