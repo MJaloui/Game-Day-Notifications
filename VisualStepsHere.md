@@ -237,16 +237,17 @@ Copy and save the ARN of the role for use in the Lambda function.
 ![image](https://github.com/user-attachments/assets/ea543a83-2706-43d1-9787-52ba8dfe24b4)
 
 
-copy the contents of the src/gd_notifications.py file from the repository and paste it 
-    in the code funtion.
+33. copy the contents of the src/gd_notifications.py file from the repository and paste it 
+    in the code funtion. 
     
 ![image](https://github.com/user-attachments/assets/db81d713-60f4-4463-94f9-2297afabe513)
 ![image](https://github.com/user-attachments/assets/bfa42358-dc41-414c-a9e6-3fe53337d9af)
 
+34. Click deploy on the left panel.
+
+![image](https://github.com/user-attachments/assets/2f9695e0-9cde-4026-ba13-ceabe4a65031)
 
 
-
-Paste it into the inline code editor.
 Under the Environment Variables section, add the following:
 NBA_API_KEY: your NBA API key.
 SNS_TOPIC_ARN: the ARN of the SNS topic created earlier.
