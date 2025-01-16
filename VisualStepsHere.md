@@ -295,13 +295,27 @@ Copy and save the ARN of the role for use in the Lambda function.
 ![image](https://github.com/user-attachments/assets/db81d713-60f4-4463-94f9-2297afabe513)
 ![image](https://github.com/user-attachments/assets/bfa42358-dc41-414c-a9e6-3fe53337d9af)
 
-40. Click deploy on the left panel.
+
+
+40. You can adjust the timezone if you needed in this script. To change timezone, figure out what number is needed for the timezone in this 
+    script. I researched my timezone and it is "5" for Eastern.
+
+    - Scroll down to "#Adjust for Central Time (UTC-5)"
+    - Change everywhere you see "6" to "5". 
+    - Change everywhere you see "Central" to "Eastern".
+    
+![image](https://github.com/user-attachments/assets/982d1304-51ba-4ef8-8fa5-0de5ac877956)
+![image](https://github.com/user-attachments/assets/7f2d3e56-9ad6-47cb-a367-0474f17893f3)
+
+
+
+41. Click deploy on the left panel.
 
 ![image](https://github.com/user-attachments/assets/2f9695e0-9cde-4026-ba13-ceabe4a65031)
 
-41. If it was succesfull, you will see a success banner on the top.
+42. If it was succesfull, you will see a success banner on the top.
 
-![image](https://github.com/user-attachments/assets/c57f02f4-4f6d-496a-b30b-a100a113d41f)
+![image](https://github.com/user-attachments/assets/48c14022-6052-41e2-89a5-da7f26179cdb)
 
 Next, go to "Configuration" tab, then click "Environment Variables" on the left panel. 
 
@@ -323,7 +337,32 @@ Click "Add environment variable" to add a second variable. Add the "Key" name (S
 
 You will now have to Set Up Automation with Eventbridge, navigate to the Eventbridge service in the AWS Management Console.
 
-Go to Rules → Create Rule.
+![image](https://github.com/user-attachments/assets/2d1d935f-aabd-4c8e-a14e-e7ea19fb7079)
+
+On the Left panel click to "Rules" , then click "Create Rule".
+
+![image](https://github.com/user-attachments/assets/948f6b29-1ae3-461f-b660-905deb5c2213)
+![image](https://github.com/user-attachments/assets/211cd152-37b4-4e20-8ef4-96b5df6cd2ea)
+
+Test the system to validate it works, click the "Test" tab.
+
+![image](https://github.com/user-attachments/assets/fb58b3b2-cdd2-40cc-a07d-5ca30da863e0)
+
+
+
+
+For the "Event name", name it “test1”, and click save. Leave everything else at the default settings.
+
+![image](https://github.com/user-attachments/assets/705eb746-ee1d-448b-9ae1-b9efdb8e6272)
+
+
+
+
+
+click test on top right
+
+
+
 Select Event Source: Schedule.
 Set the cron schedule for when you want updates (e.g., hourly).
 Under Targets, select the Lambda function (gd_notifications) and save the rule.
