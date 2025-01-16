@@ -313,17 +313,16 @@ Click "Add environment variable", then add the "Key" name (API Key) and "Value" 
 ![image](https://github.com/user-attachments/assets/fad314d8-7e1d-4884-b03f-fbcf63d0f1e8)
 
 
-Click "Add environment variable" to add a second variable. Add the "Key" name (SNS Topic) and "Value" (ARN of SNS topic created earlier).  After you enter both Variables click "Save".
+Click "Add environment variable" to add a second variable. Add the "Key" name (SNS Topic) and "Value" (ARN of SNS topic created earlier).  After you enter both Variables click "Save" and "Create function"
 
 
 ![image](https://github.com/user-attachments/assets/c20f692f-39ee-46d9-bfae-4b4020635eea)
 ![image](https://github.com/user-attachments/assets/ace03121-09f7-48cf-9545-9238f294f985)
+![image](https://github.com/user-attachments/assets/721c59f8-ad5e-4eb8-94ab-85dba130cb14)
+![image](https://github.com/user-attachments/assets/380e37c6-8eb9-45c3-9ae9-25782bf21cc7)
 
+You will now have to Set Up Automation with Eventbridge, navigate to the Eventbridge service in the AWS Management Console.
 
-SNS_TOPIC_ARN: the ARN of the SNS topic created earlier.
-Click Create Function.
-Set Up Automation with Eventbridge
-Navigate to the Eventbridge service in the AWS Management Console.
 Go to Rules → Create Rule.
 Select Event Source: Schedule.
 Set the cron schedule for when you want updates (e.g., hourly).
