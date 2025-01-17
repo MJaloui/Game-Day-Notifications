@@ -52,13 +52,13 @@
 ---
 
 
-## **Setup Instructions**   ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/game-day-notifications/blob/main/VisualStepsHere.md) ❗⬅️
-
-### **Steps:** 
+## **Instructions**   
 
 **Prerequisites**
 - Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
 - Personal AWS account with basic understanding of AWS and Python
+
+### **Steps:** ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/game-day-notifications/blob/main/VisualStepsHere.md) ❗⬅️
 
 1. Clone my Repository
 
