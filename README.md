@@ -26,7 +26,7 @@
 
 
 
-## **Technologies**
+## **🚨 Technologies 🚨**
 - **Linux**
 - **Virtual Box**
 - **Ubuntu**
@@ -52,7 +52,7 @@
 ---
 
 
-## **Instructions**   
+## **👀 Instructions 👀**   
 
 **Prerequisites**
 - Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
