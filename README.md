@@ -40,16 +40,8 @@
 
 
 
-
 ---
 
-## **Technical Architecture**
-<img src="https://github.com/user-attachments/assets/5e19635e-0685-4c07-9601-330f7d1231f9" width="50%" />
-
-
-
-
----
 
 
 ## **👀 Instructions 👀**   
@@ -104,3 +96,12 @@
 🌱 Store user preferences (teams, game types) in DynamoDB for personalized alerts.
 
 🌱 Implement a web UI
+
+
+
+---
+
+
+
+## **Technical Architecture**
+<img src="https://github.com/user-attachments/assets/5e19635e-0685-4c07-9601-330f7d1231f9" width="50%" />
