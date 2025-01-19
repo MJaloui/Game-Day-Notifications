@@ -326,6 +326,8 @@ Click Next: Review.
 &nbsp;
 
 ### 32. Enter a name for the role (e.g., gd_lambda_role), add a description if you wish, review everything, and click "Create Role".
+ - Copy and save the ARN of the role for use in the Lambda function.
+
 
 ![image](https://github.com/user-attachments/assets/23b2ea6d-aac8-45ab-8ece-583e0de21710)
 ![image](https://github.com/user-attachments/assets/9be51ee1-3648-4979-8231-440d9de041f7)
@@ -333,7 +335,7 @@ Click Next: Review.
 
 &nbsp;
 
-Copy and save the ARN of the role for use in the Lambda function.
+
 
 
 
