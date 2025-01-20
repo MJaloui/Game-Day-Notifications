@@ -5,7 +5,7 @@
 
 
 
-## **Project Highlights**
+## **🔷 Project Highlights 🔷**
 🏀 This project sends live NBA game score updates to subscriped users via text messages or emails.
 
 🏀 It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EventBridge** and **NBA APIs** to provide sports fans with up-to-date game information. 
@@ -14,7 +14,7 @@
 
 
 
-## **Capabilities**
+## **🔧 Capabilities 🔧**
 🔧 Fetches live NBA game scores using an external API.
 
 🔧 Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
@@ -46,9 +46,11 @@
 
 ## **👀 Instructions 👀**   
 
-**Prerequisites**
-- Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
-- Personal AWS account with basic understanding of AWS and Python
+**🔹 Prerequisites 🔹**
+
+🔹 Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
+
+🔹 Personal AWS account with basic understanding of AWS and Python
 
 ### **Steps:** ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/game-day-notifications/blob/main/VisualStepsHere.md) ❗⬅️
 
@@ -80,22 +82,24 @@
 
 ---
 
-### **Key Takeaways**
-✔️ Designing a notification system with AWS SNS and Lambda.
+### **✔️ Keynotes ✔️**
 
-✔️ Securing AWS services with least privilege IAM policies.
+🔹 Designing a notification system with AWS SNS and Lambda.
 
-✔️ Automating workflows using EventBridge.
+🔹 Securing AWS services with least privilege IAM policies.
 
-✔️ Integrating external APIs into cloud-based workflows.
+🔹 Automating workflows using EventBridge.
+
+🔹 Integrating external APIs into cloud-based workflows.
 
 
-### **Opportunities for Growth**
-🌱 Add NFL score alerts for extended functionality.
+### **🌱 Opportunities for Growth 🌱**
 
-🌱 Store user preferences (teams, game types) in DynamoDB for personalized alerts.
+🔹 Add NFL score alerts for extended functionality.
 
-🌱 Implement a web UI
+🔹 Store user preferences (teams, game types) in DynamoDB for personalized alerts.
+
+🔹 Implement a web UI
 
 
 
