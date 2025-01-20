@@ -6,6 +6,7 @@
 
 
 ## **🔷 Project Highlights 🔷**
+
 🏀 This project sends live NBA game score updates to subscriped users via text messages or emails.
 
 🏀 It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EventBridge** and **NBA APIs** to provide sports fans with up-to-date game information. 
@@ -15,28 +16,39 @@
 
 
 ## **🔧 Capabilities 🔧**
-🔧 Fetches live NBA game scores using an external API.
 
-🔧 Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
+🔹 Fetches live NBA game scores using an external API.
 
-🔧 Scheduled automation for regular updates using Amazon EventBridge.
+🔹 Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
 
-🔧 Designed with security in mind, following the principle of least privilege for IAM roles.
+🔹 Scheduled automation for regular updates using Amazon EventBridge.
+
+🔹 Designed with security in mind, following the principle of least privilege for IAM roles.
 
 
 
 
 ## **🚨 Technologies 🚨**
-- **Linux**
-- **Virtual Box**
-- **Ubuntu**
-- **Visual Studio Code**
-- **Cloud Provider**: AWS
-- **Core Services**: SNS, Lambda, EventBridge
-- **External API**: NBA Game API (SportsData.io)
-- **Programming Language**: Python 3.x
-- **IAM Security**:
-- **Least privilege policies**: Lambda, SNS, and EventBridge
+
+🔹 **Linux**
+
+🔹 **Virtual Box**
+
+🔹 **Ubuntu**
+
+🔹 **Visual Studio Code**
+
+🔹 **Cloud Provider**: AWS
+
+🔹 **Core Services**: SNS, Lambda, EventBridge
+
+🔹 **External API**: NBA Game API (SportsData.io)
+
+🔹 **Programming Language**: Python 3.x
+
+🔹 **IAM Security**:
+
+🔹 **Least privilege policies**: Lambda, SNS, and EventBridge
 
 
 
@@ -103,9 +115,3 @@
 
 
 
----
-
-
-
-## **Technical Architecture**
-<img src="https://github.com/user-attachments/assets/5e19635e-0685-4c07-9601-330f7d1231f9" width="50%" />
