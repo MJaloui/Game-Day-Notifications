@@ -9,7 +9,7 @@
 
 🏀 This project sends live NBA game score updates to subscriped users via text messages or emails.
 
-🏀 It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EventBridge** and **NBA APIs** to provide sports fans with up-to-date game information.
+🏀 It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EventBridge** and **NBA APIs** to provide sports fans with updates of games.
 
 🏀 This project demonstrates how to utilize cloud computing to set up a quick and efficient way to send notifications.
 
